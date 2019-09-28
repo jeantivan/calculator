@@ -1,11 +1,14 @@
 {
   "name": "calculator",
+  "author": "Jean T.",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "redux-devtools": "^3.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
