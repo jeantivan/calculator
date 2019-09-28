@@ -77,7 +77,11 @@ function App() {
         </div>
       </div>
       <div className="by">
-        Made with 💙 by{" "}
+        Made with{" "}
+        <span role="img" aria-label="love">
+          💚
+        </span>{" "}
+        by{" "}
         <a
           href="https://github.com/jptivan53"
           target="_blank"
