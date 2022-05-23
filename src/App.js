@@ -12,7 +12,7 @@ function App() {
     endsWithOp = /[+*/-]$/;
 
   // When a number is clicked
-  const handleNumber = str => {
+  const handleNumber = (str) => {
     if (str === "0" && str === input) return false;
 
     setInput(input === "0" ? str : input + str);
@@ -20,14 +20,14 @@ function App() {
   };
 
   // When a operator is clicked
-  const handleOperator = str => {
+  const handleOperator = (str) => {
     setValue(str);
     if (input.match(endsWithOp)) return setInput(input.slice(0, -1) + str);
     setInput(input + str);
   };
 
   // When the decimal is clicked
-  const handleDecimal = str => {
+  const handleDecimal = (str) => {
     if (value.includes(str)) return false;
     setInput(input + str);
     setValue(value === "" || typeOp.test(value) ? "0" + str : value + str);
@@ -40,7 +40,7 @@ function App() {
   };
 
   // Evaluate the formula
-  const handleEqual = str => {
+  const handleEqual = (str) => {
     if (
       endsWithOp.test(input) ||
       input === "" ||
@@ -83,7 +83,7 @@ function App() {
         </span>{" "}
         by{" "}
         <a
-          href="https://github.com/jptivan53"
+          href="https://github.com/jeantivan"
           target="_blank"
           rel="noopener noreferrer"
         >
