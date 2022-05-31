@@ -63,33 +63,38 @@ function App() {
 
   return (
     <>
-      <h1 className="title">JavaScript Calculator</h1>
-      <div className="calculator-container">
-        <div className="calculator">
-          <Display input={input} />
-          <Buttons
-            handleEqual={handleEqual}
-            handleNumber={handleNumber}
-            handleDecimal={handleDecimal}
-            handleOperator={handleOperator}
-            handleClear={handleClear}
-          />
+      <main class="main">
+        <h1 className="title">JavaScript Calculator</h1>
+        <div className="calculator-container">
+          <div className="calculator">
+            <Display input={input} />
+            <Buttons
+              handleEqual={handleEqual}
+              handleNumber={handleNumber}
+              handleDecimal={handleDecimal}
+              handleOperator={handleOperator}
+              handleClear={handleClear}
+            />
+          </div>
         </div>
-      </div>
-      <div className="by">
-        Made with{" "}
-        <span role="img" aria-label="love">
-          💙
-        </span>{" "}
-        by{" "}
-        <a
-          href="https://github.com/jeantivan"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Jean T.
-        </a>
-      </div>
+      </main>
+
+      <footer className="by">
+        <p>
+          Made with{" "}
+          <span role="img" aria-label="love">
+            💙
+          </span>{" "}
+          by{" "}
+          <a
+            href="https://github.com/jeantivan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Jean Tivan
+          </a>
+        </p>
+      </footer>
     </>
   );
 }
